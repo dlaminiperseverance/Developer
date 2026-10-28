@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ama Dev Vaccation</h1>
+<p>Tick what the crew wants to vibe with — food, drinks, and extras. Totals add up automatically!</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Prices (editable)</h2>
+            <div id="priceList" class="price-list"></div>
+        </section>
+
+        <section class="card">
+            <h2>Registered People <small id="countLabel"></small></h2>
+
+            <div class="toolbar">
+                <input type="text" id="newName" placeholder="Add a new person's name">
+                <button type="button" id="addButton">Add Person</button>
+                <button type="button" id="exportButton" class="gold">Export CSV</button>
+                <button type="button" id="resetButton" class="secondary">Reset Ticks</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                    <tfoot id="tableFoot"></tfoot>
+                </table>
+            </div>
+
+            <h3 class="grand">Grand Total: <span id="grandTotal">$0.00</span></h3>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
